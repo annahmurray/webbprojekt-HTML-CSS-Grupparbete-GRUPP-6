@@ -1,0 +1,475 @@
+/* Färger */
+:root {
+  --primar-ljus: #acdadd;
+  --primar-mork: #473a2b;
+  --primar-orange: #f18628;
+
+  --sek-bla: #4161ab;
+  --sek-beige: #b2967c;
+  --sek-brun: #7c6852;
+
+  --font-header: 'Gloria Hallelujah', cursive;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+/* Grundinställningar */
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: #ffffff;
+  color: var(--primar-mork);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-header);
+  margin: 0;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  align-items: center;
+}
+
+header .logo {
+  font-family: var(--font-header);
+  font-size: 32px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--primar-mork);
+}
+
+nav a:hover {
+  color: var(--primar-orange);
+  text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+  background: var(--primar-ljus);
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.hero-text {
+  width: 45%;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  backdrop-filter: blur(4px);
+
+  margin-left: 0;    
+}
+.img-placeholder {
+  width: 250px;
+  height: 250px;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+}
+.hero-bild {
+  width: 500px;
+  height: auto;
+ 
+}
+
+.hero-bild img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* STEPS */
+.steps {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 40px;
+}
+
+.step {
+  width: 220px;
+}
+
+.number {
+  width: 70px;
+  height: 70px;
+  background: var(--primar-orange);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  margin: 0 auto 10px;
+}
+
+.number.orange {
+  background: var(--primar-orange);
+}
+
+/* PRODUKTSEKTION */
+.products {
+  background: var(--primar-mork);
+  color: white;
+  padding: 60px;
+  text-align: center;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.product-card {
+  width: 350px;
+}
+
+.img-placeholder {
+  background: #cfc6ba;
+  height: 200px;
+  margin-bottom: 15px;
+}
+.product-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+
+  border: 6px solid rgba(178, 150, 124, 0.35);
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  margin-bottom: 15px;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+
+/* PRENUMERATION */
+.subscription {
+  padding: 60px;
+  text-align: center;
+}
+
+.subscription button {
+  background: var(--primar-orange);
+  border: none;
+  padding: 12px 24px;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.subscription button:hover {
+  background: #d37120;
+}
+
+.sub-img {
+  margin: 20px auto;
+  background: #ddd;
+}
+
+/* INFO-BLOCK */
+.info-block {
+  background: var(--primar-ljus);
+  padding: 80px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px;
+  color: var(--primar-mork);
+}
+
+footer a {
+  margin: 0 10px;
+  color: var(--primar-mork);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--primar-orange);
+  text-decoration: underline;
+}
+
+.note {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 60px;  
+  height: auto;
+}
+.subscription-image {
+  width: 300px;      
+  height: 300px;    
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 12px;            
+  border: 6px solid rgba(178, 150, 124, 0.35);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);    
+}
+
+.subscription-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ========= PÅTÅR – HERO ========= */
+
+.patar-hero {
+  background: #f4efe9;
+  padding: 4rem 5vw;
+}
+
+.patar-hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* Text i hero */
+.patar-hero-text h1 {
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.patar-hero-text p {
+  font-size: 1rem;
+  max-width: 300px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Bild i hero */
+.patar-hero-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.patar-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ========= PÅTÅR – UTBUD ========= */
+
+.patar-offers {
+  background: #b9dde4;
+  padding: 5rem 5vw 4rem;
+  position: relative;
+}
+
+.patar-section-title {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  background: #b48c6a;
+  color: white;
+  padding: 0.7rem 3rem;
+  border-radius: 10px;
+  font-family: var(--font-header);
+  font-size: 1.5rem;
+}
+
+.patar-offers-inner {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Kort för Påtår-produkter */
+.offer-card {
+  background: #e9f3f5;
+  border-radius: 20px;
+  padding: 2.5rem 1.7rem 3.8rem;
+  text-align: center;
+  max-width: 280px;
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Bild i kortet */
+.offer-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.offer-image img {
+  width: 100%;
+  max-width: 180px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* Text i kortet */
+.offer-card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.offer-card p {
+  margin: 0;
+  padding: 0;
+}
+
+.offer-meta {
+  font-size: 0.9rem;
+  margin-bottom: 0.1rem;
+}
+
+.offer-price {
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+/* ========= KNAPP ========= */
+
+.btn {
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.8rem;
+  background: #b48c6a;
+  color: white;
+  cursor: pointer;
+  margin-top: 0.8rem;
+}
+
+.btn:hover {
+  filter: brightness(0.95);
+}
+
+/* ========= SÄSONGSMIX ========= */
+
+.seasonmix {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  margin: 3rem 0;
+  padding: 0 5vw;
+}
+
+.seasonmix-image {
+  width: 100%;
+  height: 280px;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #d0cecb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seasonmix-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.seasonmix-content {
+  background: white;
+  text-align: center;
+  padding: 2.5rem;
+}
+
+.seasonmix-text {
+  margin: 0.5rem 0 1rem;
+}
+/* OM OSS  */
+/*--------------------------------------------------*/
+
+/* Sektion 1 */
+.om-oss-text {
+  background-color: var(--primar-ljus);
+  padding-top: 130px;
+  padding-bottom: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.om-oss-text img {
+  border-radius: 6px;
+  margin-left: 50px;
+}
+
+.om-oss-text h1 {
+  display: flex;
+  justify-content: center; /* titeln centrerad */
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.om-oss-text p {
+  max-width: 500px; /* textens max-bredd */
+}
+
+/* Sektion 2 */
+.om-oss-text-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.om-oss-text-2 h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.om-oss-text-2 img {
+  border-radius: 6px;
+  margin-right: 50px;
+}
+
+.om-oss-text-2 p {
+  max-width: 500px;
+}
